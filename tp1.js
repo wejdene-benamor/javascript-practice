@@ -28,3 +28,17 @@ midElement(["a", "b", "n", "j", "k", "j"]);
  * @param {Array<number>} array
  * @return {Array<number>}
  */
+function multipleEvenIndexes(tab) {
+  var t = [];
+  for (i = 0; i <= tab.length - 1; i++) {
+    // console.log(i, "counter");
+    // console.log(tab[i], "array");
+    if (i % 2 === 0) {
+      t.push(tab[i] * 2);
+    }
+  }
+  return t;
+}
+
+var res = multipleEvenIndexes([3, 5, 7, 8, 10]);
+console.log(res);
