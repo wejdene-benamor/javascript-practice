@@ -10,3 +10,13 @@
  * @param {number} n
  * @return {Array}
  */
+function occurrences(tab, n) {
+  var c = 0;
+  for (i = 0; i <= tab.length; i++) {
+    if (tab[i] == n) c = c + 1;
+  }
+  console.log(c);
+  return c;
+}
+var res = occurrences([1, 5, 1, 7, 6], 1);
+console.log(res);
