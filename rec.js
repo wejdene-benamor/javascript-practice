@@ -8,19 +8,13 @@
 //  "0 is even"
 
 function reverseIterateAndLogWithFor(n) {
-
   // TODO: your work goes here
-
 }
 
 function reverseIterateAndLogWithWhile(n) {
-
   // TODO: your work goes here
-
 }
 
 function reverseIterateAndLogRecursively(n) {
-
-  // TODO: your work goes here
-
+ // code goes here 
 }
