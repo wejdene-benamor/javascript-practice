@@ -6,3 +6,8 @@
 
 
 
+/* 3-write a function called (multipleEvenIndexes) that takes an array of numbers, as an argument and returns an array of numbers, multiplied by two for even indexes.
+ *
+ * @param {Array<number>} array
+ * @return {Array<number>}
+ */
