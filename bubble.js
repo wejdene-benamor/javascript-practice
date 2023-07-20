@@ -26,6 +26,29 @@
  *  Example usage:
  * bubbleSortTest([2, 1, 3]); // yields [1, 2, 3]
  */
-var bubbleSort = function (array) {
-// TODO: Your code here!
-};
+function recursiveBubbleSort(arr, n) {
+    // Base case: If the array has one or zero elements, it is already sorted
+    if (n <= 1) {
+      return;
+    }
+  
+    // One pass through the array to move the largest element to its correct position
+    for (let i = 0; i < n - 1; i++) {
+      if (arr[i] > arr[i + 1]) {
+        // Swap elements
+        var temp = arr[i];
+        arr[i] = arr[i + 1];
+        arr[i + 1] = temp;
+      }
+    }
+  
+    // Recur with one less element since the last element is already in its correct position
+    recursiveBubbleSort(arr, n - 1);
+  }
+  
+  // Example usage:
+  const arr = [64, 34, 25, 12, 22, 11, 90];
+  const n = arr.length;
+  recursiveBubbleSort(arr, n);
+  console.log("Sorted array:", arr);
+  
